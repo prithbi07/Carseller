@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Your Car Action</title>
+    <link rel="Stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="form-box">
+        <h2><i class='bx bx-lock-open'></i> Who are you?</h2>
+        <form onsubmit="redirectUser(event)">
+            <label for="role">Select your role:</label>
+            <select name="role" id="role" required>
+                <option value="">-- Choose Role --</option>
+                <option value="owner">Owner</option>
+                <option value="customer">Customer</option>
+            </select>
+            <button type="submit"><i class='bx bxs-terminal' ></i> Continue</button>
+        </form>
+    </div>
+    <script src="./function.js"></script>
+
+</body>
+</html>

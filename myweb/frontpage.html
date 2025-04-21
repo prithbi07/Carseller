@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Your Car Action</title>
+    <link rel="Stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2><i class='bx bxs-chevron-down-circle'></i> What would you like to do?</h2>
+        <form onsubmit="redirectCustomer(event)">
+            <label for="action">Choose an option:</label>
+            <select name="action" id="action" required>
+                <option value="">-- Select --</option>
+                <option value="buy">Buy a Car</option>
+                <option value="test_drive">Book a Test Drive</option>
+            </select>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+    <script src="./function.js"></script>
+    
+</body>
+</html>
